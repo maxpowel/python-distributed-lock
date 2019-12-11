@@ -13,6 +13,12 @@ several machines in every part of the world running the same code?
 
 This library is for that.
 
+Installing
+==========
+```bash
+pip install distributed-lock
+```
+
 How does it work
 ================
 Using redis. Redis is known to use a single thread to make operations. This ensures
