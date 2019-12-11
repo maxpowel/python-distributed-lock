@@ -51,6 +51,6 @@ with DistributedLock(redis_client, lock_name="register_user", lock_ttl=30):
     # If you run this code in several threads, processes at the same time, you will
     # always see "abcd", not mixed words. Of course, when using threads or processes
     # using this library is "totally wrong", the idea is to use it in a task queue or
-    # places that where you know nothing about others.
+    # places that where you know nothing about others, like tasks in celery
 
 ```
